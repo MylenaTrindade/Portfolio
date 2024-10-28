@@ -1,0 +1,168 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffdbed;
+    color: #333;
+}
+
+/* Cabeçalho fixo */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:  #e7085e;
+    color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 2px 5px  #e7085e;
+    z-index: 1000;
+}
+
+/* Botões do cabeçalho */
+.header-buttons a {
+    color:  #e7085e;
+    background-color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+.position{
+    margin-right: 100px;
+}
+
+#sobre, #objetivos, #competencias, #projetos{
+    scroll-margin-top: 50vh;
+}
+
+.header-buttons a:hover {
+    background-color:  #e7085e;
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    padding: 100px 20px 20px; /* Espaço extra no topo para o cabeçalho fixo */
+    max-width: 800px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+    .content-section {
+        width: 80%; /* Ajuste conforme necessário para sua página */
+        margin: 0 auto; /* Centraliza a seção na página */
+    }
+    
+    .content-section p {
+        text-align: justify; /* Alinha o texto nas margens esquerda e direita */
+        text-justify: inter-word; /* Espaça palavras para um efeito mais equilibrado */
+    }
+    
+
+
+footer {
+    background-color: #e7085e;
+    color: #fff;
+    text-align: center;
+    padding: 1px;
+    bottom: 0;
+    width: 100%;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:  #e7085e;
+    color: #fff;
+    padding: 5px 20px; /* Diminua o padding vertical para reduzir a altura */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+/* Ajuste a imagem do logo */
+.logo {
+    position: absolute;
+    bottom: -400px;
+    left: 10px;
+    width: 200px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+}
+
+/* Estilo para ícones de contato */
+.content-section i {
+    margin-right: 8px;
+    color: #333;
+}
+
+/* Estilo do botão de enviar e-mail */
+.email-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:   #e7085e;
+    color:  #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+/* Estilo da seção de projetos */
+.content-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.content-section li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+/* Estilo das imagens */
+.project-image {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+
+.read-more-button:hover {
+    background-color: #0056b3;
+}
+/* Estilo para esconder a descrição completa inicialmente */
+.project-details {
+    display: none;
+    margin-top: 10px;
+}
+
+/* Estilo adicional para o conteúdo expandido */
+.project-details img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+/* Estilo para o link "Ler mais" */
+.read-more-link {
+    color: #e7085e;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Estilo para a descrição expandida (escondida inicialmente) */
+.project-details {
+    display: none;
+    margin-top: 10px;
+}
