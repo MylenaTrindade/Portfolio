@@ -82,14 +82,87 @@ Portfolio/
 ### 📚 UNBook
 Plataforma para troca e doação de livros dentro da UnB, desenvolvida durante a disciplina de Desenvolvimento de Software.
 
-### 💬 Gossip Girl
+### 💬 Gossip Girl UnB
 Site de fofocas universitárias desenvolvido em Python, HTML, CSS e JavaScript como parte do curso de Orientação a Objetos.
+
+### 🧌 Munchkin
+Jogo inspirado no universo Munchkin para Sistemas de Banco de Dados 1. Aplica conceitos de bancos relacionais de forma prática e gamificada.
+
+### 🧳 Touristeer
+App que ajuda turistas a explorar destinos de forma personalizada, sugerindo rotas e pontos de interesse.
+
+### 🚛 HackaTruck
+Repositório com códigos e projetos desenvolvidos no HackaTruck, programa itinerante de tecnologia e criação de aplicativos iOS.
+
+### 🍲 UniFood
+App que conecta estudantes a restaurantes locais, permitindo explorar opções e fazer pedidos de forma prática.
+
+### 🌟 Portfólio Pessoal
+Este próprio site! Desenvolvido com HTML, CSS e JavaScript responsivo para apresentar projetos e competências.
 
 ## 📞 Contato
 
 - **E-mail**: mylenamendonca6@gmail.com
 - **Telefone**: (61) 994500966
 - **Instagram**: @mymendoncaa
+
+## 🌐 Como Fazer Deploy
+
+### Opção 1: GitHub Pages (Recomendado - GRATUITO)
+
+1. **Certifique-se de que o projeto está no GitHub:**
+   ```bash
+   git add .
+   git commit -m "Atualizando portfólio"
+   git push origin main
+   ```
+
+2. **Configure o GitHub Pages:**
+   - Vá para o repositório no GitHub
+   - Clique em "Settings" → "Pages"
+   - Em "Source", selecione "Deploy from a branch"
+   - Escolha "main" branch e "/ (root)"
+   - Clique em "Save"
+
+3. **Acesse seu site:**
+   ```
+   https://mylenatrindade.github.io/Portfolio/
+   ```
+
+### Opção 2: Netlify (GRATUITO)
+
+1. **Acesse [netlify.com](https://netlify.com)**
+2. **Conecte com GitHub ou faça upload manual da pasta**
+3. **Configure:**
+   - Build command: (deixe vazio)
+   - Publish directory: (deixe vazio ou "./")
+4. **Deploy automático:** A cada push no GitHub, o site atualiza automaticamente
+
+### Opção 3: Vercel (GRATUITO)
+
+1. **Acesse [vercel.com](https://vercel.com)**
+2. **Conecte com GitHub**
+3. **Importe o repositório Portfolio**
+4. **Deploy automático:** Configuração zero necessária
+
+### Opção 4: Surge.sh (GRATUITO)
+
+1. **Instale o Surge:**
+   ```bash
+   npm install -g surge
+   ```
+
+2. **Faça o deploy:**
+   ```bash
+   cd /caminho/para/Portfolio
+   surge
+   ```
+
+3. **Siga as instruções:** Escolha um domínio personalizado ou use o gerado
+
+### 🎯 Recomendação
+
+**Use GitHub Pages** para começar - é gratuito, fácil de configurar e perfeito para portfólios pessoais!
 
 ## 🔧 Melhorias Futuras
 
@@ -98,6 +171,7 @@ Site de fofocas universitárias desenvolvido em Python, HTML, CSS e JavaScript c
 - [ ] Adicionar animações CSS
 - [ ] Criar versão em inglês
 - [ ] Adicionar seção de blog/artigos
+- [ ] Configurar domínio personalizado
 
 ## 📝 Licença
 
