@@ -1,10 +1,11 @@
-/* Estilos básicos */
+/* Estilos básicos - Atualizado */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #ffdbed;
     color: #333;
+    line-height: 1.6;
 }
 
 /* Cabeçalho fixo */
@@ -12,162 +13,752 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color:  #e7085e;
+    background-color: #e7085e;
     color: #ffffff;
     padding: 10px 20px;
     display: flex;
     align-items: center;
-    box-shadow: 0px 2px 5px  #e7085e;
+    justify-content: space-between;
+    box-shadow: 0px 2px 5px #e7085e;
     z-index: 1000;
+    box-sizing: border-box;
+}
+
+/* Logo responsivo e redondo */
+header .logo {
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    margin-right: 15px;
+    display: block;
+}
+
+/* Container para logo e título */
+header .header-left {
+    display: flex !important;
+    align-items: center !important;
+    flex-shrink: 0;
+}
+
+/* Título do cabeçalho */
+header .header-left h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-left: 0 !important;
 }
 
 /* Botões do cabeçalho */
+.header-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
 .header-buttons a {
-    color:  #e7085e;
+    color: #e7085e;
     background-color: #ffffff;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 8px 16px;
     border-radius: 5px;
-    margin-left: 10px;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    white-space: nowrap;
 }
 
-.position{
-    margin-right: 100px;
+.position {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-#sobre, #objetivos, #competencias, #projetos{
-    scroll-margin-top: 50vh;
+#sobre, #objetivos, #competencias, #projetos {
+    scroll-margin-top: 100px;
 }
 
 .header-buttons a:hover {
-    background-color:  #e7085e;
+    background-color: #e7085e;
+    color: #ffffff;
+    transform: translateY(-2px);
 }
 
 /* Estilos para o conteúdo principal */
 main {
-    padding: 100px 20px 20px; /* Espaço extra no topo para o cabeçalho fixo */
-    max-width: 800px;
+    padding: 120px 20px 20px;
+    max-width: 1200px;
     margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.content-section {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    padding: 25px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85));
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid #e7085e;
+}
+
+.content-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(231, 8, 94, 0.15);
+}
+
+.content-section p {
+    text-align: justify;
+    text-justify: inter-word;
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+.content-section h2 {
+    color: #e7085e;
+    border-bottom: 3px solid #e7085e;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    position: relative;
+}
+
+.content-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(45deg, #e7085e, #ff6b9d);
+}
+
+.content-section h3 {
+    color: #e7085e;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+/* Seção de projetos */
+.project-section {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 30px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85));
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid #e7085e;
+}
+
+.project-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(231, 8, 94, 0.15);
+}
+
+.projects-intro {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Grid de projetos */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+/* Cards de projeto */
+.project-card {
+    background: linear-gradient(135deg, #ffffff, #f8f9fa);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(231, 8, 94, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(45deg, #e7085e, #ff6b9d);
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(231, 8, 94, 0.2);
+    border-color: rgba(231, 8, 94, 0.3);
+}
+
+.project-header {
+    margin-bottom: 15px;
+}
+
+.project-header h3 {
+    color: #e7085e;
+    margin: 0 0 10px 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.tag {
+    background: linear-gradient(45deg, #e7085e, #ff6b9d);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.project-description {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.project-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.project-link {
+    display: inline-flex;
     align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.demo-link {
+    background: linear-gradient(45deg, #28a745, #20c997);
+    color: white;
+}
+
+.demo-link:hover {
+    background: linear-gradient(45deg, #218838, #1ba085);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+}
+
+.github-link {
+    background: linear-gradient(45deg, #333, #555);
+    color: white;
+}
+
+.github-link:hover {
+    background: linear-gradient(45deg, #24292e, #444);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(51, 51, 51, 0.3);
+}
+
+.all-projects {
+    background: rgba(231, 8, 94, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+    border: 1px solid rgba(231, 8, 94, 0.1);
+}
+
+.all-projects h3 {
+    color: #e7085e;
+    margin-bottom: 10px;
+}
+
+.all-projects p {
+    color: #666;
+    margin: 0;
+}
+
+/* Links das redes sociais */
+.social-links {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.social-links h3 {
+    color: #e7085e;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    min-width: 120px;
     justify-content: center;
 }
 
-    .content-section {
-        width: 80%; /* Ajuste conforme necessário para sua página */
-        margin: 0 auto; /* Centraliza a seção na página */
-    }
-    
-    .content-section p {
-        text-align: justify; /* Alinha o texto nas margens esquerda e direita */
-        text-justify: inter-word; /* Espaça palavras para um efeito mais equilibrado */
-    }
+.github-btn {
+    background-color: #333;
+}
+
+.github-btn:hover {
+    background-color: #24292e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(51, 51, 51, 0.3);
+}
+
+.linkedin-btn {
+    background-color: #0077b5;
+}
+
+.linkedin-btn:hover {
+    background-color: #005885;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 119, 181, 0.3);
+}
+
+.social-btn i {
+    font-size: 1.2rem;
+}
     
 
 
+/* Footer responsivo */
 footer {
     background-color: #e7085e;
     color: #fff;
     text-align: center;
-    padding: 1px;
-    bottom: 0;
+    padding: 20px;
     width: 100%;
-}
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color:  #e7085e;
-    color: #fff;
-    padding: 5px 20px; /* Diminua o padding vertical para reduzir a altura */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
-    z-index: 1000;
-}
-
-/* Ajuste a imagem do logo */
-.logo {
-    position: absolute;
-    bottom: -400px;
-    left: 10px;
-    width: 200px; /* Ajuste o tamanho da imagem conforme necessário */
-    height: auto;
+    box-sizing: border-box;
+    margin-top: 40px;
 }
 
 /* Estilo para ícones de contato */
 .content-section i {
     margin-right: 8px;
-    color: #333;
+    color: #e7085e;
+    font-size: 1.2rem;
 }
 
 /* Estilo do botão de enviar e-mail */
 .email-button {
     display: inline-block;
-    padding: 10px 20px;
-    background-color:   #e7085e;
-    color:  #ffffff;
+    padding: 12px 24px;
+    background-color: #e7085e;
+    color: #ffffff;
     text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
-    transition: background-color 0.3s;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    text-align: center;
 }
 
-/* Estilo da seção de projetos */
+.email-button:hover {
+    background-color: #c50652;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(231, 8, 94, 0.3);
+}
+
+/* Listas responsivas */
 .content-section ul {
     list-style-type: none;
     padding-left: 0;
 }
 
 .content-section li {
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 20px;
-}
-
-/* Estilo das imagens */
-.project-image {
-    width: 100px;
-    height: auto;
-    margin-right: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: rgba(231, 8, 94, 0.1);
     border-radius: 5px;
+    border-left: 4px solid #e7085e;
 }
 
-
-.read-more-button:hover {
-    background-color: #0056b3;
-}
-/* Estilo para esconder a descrição completa inicialmente */
-.project-details {
-    display: none;
-    margin-top: 10px;
-}
-
-/* Estilo adicional para o conteúdo expandido */
-.project-details img {
-    width: 150px;
-    height: auto;
-    margin-bottom: 10px;
-    border-radius: 5px;
-}
 /* Estilo para o link "Ler mais" */
 .read-more-link {
     color: #e7085e;
     text-decoration: underline;
     cursor: pointer;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-/* Estilo para a descrição expandida (escondida inicialmente) */
+.read-more-link:hover {
+    color: #c50652;
+}
+
+/* Estilo para a descrição expandida */
 .project-details {
     display: none;
-    margin-top: 10px;
+    margin-top: 15px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    border: 1px solid #e7085e;
 }
 
 .project-details .git_icon {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.project-details .git_icon:hover {
+    transform: scale(1.1);
+}
+
+/* ========================================
+   MEDIA QUERIES - DESIGN RESPONSIVO
+======================================== */
+
+/* Tablets (768px e abaixo) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px 10px;
+        text-align: center;
+    }
+    
+    header .header-left {
+        margin-bottom: 10px;
+    }
+    
+    header .header-left h1 {
+        font-size: 1.3rem;
+    }
+    
+    header .logo {
+        width: 50px !important;
+        height: 50px !important;
+        border-radius: 50% !important;
+        object-fit: cover !important;
+        margin-right: 10px;
+    }
+    
+    .header-buttons {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .position {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 8px;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .header-buttons a {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+        text-align: center;
+        min-width: 80px;
+        flex: 0 1 auto;
+    }
+    
+    main {
+        padding: 160px 15px 20px;
+    }
+    
+    .content-section,
+    .project-section {
+        padding: 20px;
+        margin-bottom: 20px;
+        max-width: 95%;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .project-card {
+        padding: 20px;
+    }
+
+    .project-links {
+        justify-content: center;
+    }
+
+    .project-link {
+        flex: 1;
+        min-width: 120px;
+        justify-content: center;
+    }
+    
+    .content-section h2 {
+        font-size: 1.4rem;
+    }
+    
+    .content-section h3 {
+        font-size: 1.2rem;
+    }
+    
+    #sobre, #objetivos, #competencias, #projetos {
+        scroll-margin-top: 180px;
+    }
+
+    .social-buttons {
+        flex-direction: row;
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .social-btn {
+        min-width: 120px;
+        flex: 0 1 auto;
+    }
+}
+
+/* Smartphones (480px e abaixo) */
+@media (max-width: 480px) {
+    header {
+        padding: 12px 8px;
+    }
+    
+    header .header-left {
+        margin-bottom: 8px;
+    }
+    
+    header .header-left h1 {
+        font-size: 1.1rem;
+    }
+    
+    header .logo {
+        width: 40px !important;
+        height: 40px !important;
+        border-radius: 50% !important;
+        object-fit: cover !important;
+        margin-right: 8px;
+    }
+    
+    .position {
+        flex-direction: column;
+        gap: 6px;
+        width: 100%;
+    }
+    
+    .header-buttons a {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+        min-width: 70px;
+        width: 100%;
+        max-width: 120px;
+    }
+    
+    main {
+        padding: 140px 10px 20px;
+    }
+    
+    .content-section,
+    .project-section {
+        padding: 15px;
+        margin-bottom: 15px;
+        max-width: 98%;
+    }
+
+    .projects-grid {
+        gap: 15px;
+    }
+
+    .project-card {
+        padding: 18px;
+    }
+
+    .project-header h3 {
+        font-size: 1.1rem;
+    }
+
+    .project-description {
+        font-size: 0.9rem;
+    }
+
+    .project-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .project-link {
+        width: 100%;
+        justify-content: center;
+        padding: 12px 20px;
+    }
+
+    .tag {
+        font-size: 0.75rem;
+        padding: 3px 10px;
+    }
+    
+    .content-section h2 {
+        font-size: 1.2rem;
+    }
+    
+    .content-section h3 {
+        font-size: 1rem;
+    }
+    
+    .content-section p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+    
+    .email-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .content-section i {
+        font-size: 1rem;
+    }
+    
+    .project-details {
+        padding: 10px;
+    }
+    
+    .project-details .git_icon {
+        width: 35px;
+        height: 35px;
+    }
+    
+    footer {
+        padding: 15px 10px;
+        font-size: 0.9rem;
+    }
+
+    .social-buttons {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .social-btn {
+        width: 90%;
+        max-width: 200px;
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+
+    .social-links h3 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Smartphones muito pequenos (320px e abaixo) */
+@media (max-width: 320px) {
+    header .header-left {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+    
+    header .header-left h1 {
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+    
+    header .logo {
+        width: 35px !important;
+        height: 35px !important;
+        border-radius: 50% !important;
+        object-fit: cover !important;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    
+    .position {
+        gap: 5px;
+    }
+    
+    .header-buttons a {
+        padding: 6px 8px;
+        font-size: 0.7rem;
+        min-width: 50px;
+    }
+    
+    main {
+        padding: 130px 8px 15px;
+    }
+    
+    .content-section,
+    .project-section {
+        padding: 12px;
+        margin-bottom: 12px;
+        max-width: 100%;
+    }
+
+    .project-card {
+        padding: 15px;
+    }
+
+    .project-header h3 {
+        font-size: 1rem;
+    }
+
+    .project-description {
+        font-size: 0.85rem;
+    }
+
+    .project-link {
+        padding: 10px 15px;
+        font-size: 0.8rem;
+    }
+
+    .projects-intro {
+        font-size: 1rem;
+    }
+    
+    .content-section h2 {
+        font-size: 1.1rem;
+    }
+    
+    .content-section p {
+        font-size: 0.8rem;
+    }
+
+    .social-btn {
+        width: 95%;
+        padding: 10px 15px;
+        font-size: 0.8rem;
+    }
 }

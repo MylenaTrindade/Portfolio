@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mylena Mendonça</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=2025081002">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
     <header>
-        <h1>Mylena Mendonça</h1>
+        <div class="header-left">
+            <img src="images/logo.jpeg" alt="Logo" class="logo">
+            <h1>Mylena Mendonça</h1>
+        </div>
         <div class="header-buttons">
-            <a href="pagina1.html">Página 1</a>
-            <a href="pagina2.html">Página 2</a>
+            <div class="position">
+                <a href="#sobre">Sobre mim</a>
+                <a href="#objetivos">Objetivos</a>
+                <a href="#competencias">Competências</a>
+                <a href="#projetos">Projetos</a>
+            </div>
         </div>
     </header>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mylena Mendonça</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    </head>
     
 
     <main>
@@ -35,13 +36,7 @@
 
         <section class="content-section" id="sobre">
             <h2>Sobre mim:</h2>
-            <p>Olá! Meu nome é Mylena Trindade de Mendonça, tenho 19 anos e nasci em 15 de abril de 2005.
-                Sou uma entusiasta do aprendizado e sempre busco novos desafios em minha jornada. 
-                Atualmente, estou explorando o mundo da programação cursando engenharia de software pela universidade de brasília(UNB), pois
-                acredito que cada experiência é uma oportunidade de crescimento, e estou sempre aberta a novas 
-                ideias e colaborações. No meu tempo livre, gosto de fazer esporte, assistir filmes e me envolver 
-                em projetos criativos, o que me ajuda a manter um equilíbrio saudável entre trabalho e lazer. 
-                Estou animado para compartilhar meus projetos!!!!</p>
+            <p>Olá! Meu nome é Mylena Trindade de Mendonça, tenho 20 anos e nasci no Gama, em Brasília, no dia 15 de abril de 2005. Desde criança sempre fui bastante agitada e curiosa, então sempre busquei preencher meu tempo livre com esportes e atividades extracurriculares, comecei no Jardim de Infância 2 do Gama, depois estudei na Escola Classe 14 até a metade do terceiro ano, onde fazia ballet e Kumon; na metade do terceiro ano, me mudei para o SESI, uma escola integral onde, além das aulas regulares, tinha também xadrez, cozinha experimental, dança, natação e outras atividades que eu amava e que me fizeram crescer muito até o sétimo ano, quando precisei me despedir com tristeza; do oitavo até o ensino médio estudei no CEF 03 e depois no CG, conciliando também cursinho e esportes no período contrário; durante esse período, do sétimo até o terceiro ano, também fiz curso de inglês no CILG. Tenho dois irmãos, que sempre fizeram minha vida mais alegre e cheia de aprendizados. Hoje, estou cursando Engenharia de Software na Universidade de Brasília (UNB), apaixonada por programação e sempre aberta a novas ideias e colaborações, porque acredito que cada experiência é uma chance de crescer. No meu tempo livre, adoro praticar esportes, assistir filmes e me envolver em projetos criativos para manter o equilíbrio entre trabalho e lazer. Estou animada para compartilhar meus projetos e continuar aprendendo cada vez mais!</p>
                 
                 <p>Se você quiser saber mais sobre mim, fique à vontade para entrar em contato!</p>
             
@@ -56,77 +51,153 @@
             <section class="content-section" id="competencias">
                 <h2>Competências:</h2>
             
-                <h3>Linguagens:</h3>
+                <h3>Tecnologias:</h3>
                 <ul>
                     <p>Python</p>
                     <p>C</p>
-                </ul>
-            
-                <h3>Outras Tecnologias:</h3>
-                <ul>
+                    <p>C++</p>
+                    <p>Swift</p>
+                    <p>JavaScript</p>
+                    <p>TypeScript</p>
                     <p>Figma</p>
                     <p>HTML</p>
+                    <p>CSS</p>
+                    <p>Next.js</p>
+                    <p>React</p>
+
                 </ul>
+            
             
                 <h3>Idiomas:</h3>
                 <ul>
                     <p>Espanhol Básico</p>
                     <p> Inglês Básico</p>
                 </ul>
-                <section class="project-section" id="projetos">
-                            <h2>Projetos:</h2>
-                                    <h3>Site: UNBook</h3>
-                                
-                                    <a href="javascript:void(0)" onclick="toggleDetails('unbook-details')" class="read-more-link">Ler mais</a>
-                                
-                                    
-                                    <p><div id="unbook-details" class="project-details"></p>
-                                        <p>Durante a disciplina de Desenvolvimento de Software na Universidade de Brasília, trabalhei com um grupo de colegas para criar uma plataforma destinada à troca e doação de livros dentro da própria universidade. O site foi projetado com o objetivo de incentivar o compartilhamento de conhecimento e facilitar o acesso a materiais de estudo entre os alunos da UnB.</p>
-                                    </div>
-                        </section>
-                        
-                        <!-- Projeto Gossip Girl -->
-                            <h3>Site: Gossip Girl</h3>
-                            <a href="javascript:void(0)" onclick="toggleDetails('gossipgirl-details')" class="read-more-link">Ler mais</a>
-                            <div id="gossipgirl-details" class="project-details">
-                                <p>Desenvolvi um site de fofocas voltado para a Universidade de Brasília como parte do curso de Orientação a Objetos. O projeto, construído em Python, HTML, CSS e JavaScript, cria uma plataforma interativa e estilizada, onde os visitantes podem explorar notícias e rumores da universidade de forma dinâmica. Este projeto aplicou conceitos fundamentais de Orientação a Objetos, além de técnicas de front-end para criar uma experiência envolvente e funcional para os usuários.</p>
-                                <a href="https://github.com/joaofmoreira12/GossipG" target="_blank">
-                                    <img src="images/git_icon.png" class="git_icon">
-                                </a>
-                            </div>
-                        
-                    </ul>
-                </section>
-                <script>
-                    function toggleDetails(id) {
-                        const details = document.getElementById(id);
-                        if (details.style.display === "none" || details.style.display === "") {
-                            details.style.display = "block";
-                        } else {
-                            details.style.display = "none";
-                        }
-                    }
-                    </script>
-                    
-    </main>
+            </section>
+            
+            <section class="project-section" id="projetos">
+                <h2>Projetos:</h2>
+                <p class="projects-intro">Aqui estão alguns dos meus principais projetos desenvolvidos durante minha jornada acadêmica e pessoal:</p>
 
+                <!-- Grid de Projetos -->
+                <div class="projects-grid">
+                    
+                    <!-- Projeto 1: UNBook -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>📚 UNBook</h3>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Python</span>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Plataforma desenvolvida para facilitar a troca e doação de livros entre estudantes da UnB. 
+                            Criado durante a disciplina de Desenvolvimento de Software, o projeto visa incentivar o 
+                            compartilhamento de conhecimento e facilitar o acesso a materiais de estudo.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="project-link demo-link">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                            <a href="#" class="project-link github-link">
+                                <i class="fab fa-github"></i> Código
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Projeto 2: Gossip Girl UnB -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>💬 Gossip Girl UnB</h3>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Site de fofocas universitárias desenvolvido como projeto da disciplina de Orientação a Objetos. 
+                            Plataforma interativa onde os visitantes podem explorar notícias e rumores da universidade de 
+                            forma dinâmica, aplicando conceitos de POO e técnicas de front-end.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="project-link demo-link">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                            <a href="https://github.com/joaofmoreira12/GossipG" target="_blank" class="project-link github-link">
+                                <i class="fab fa-github"></i> Código
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Projeto 3: Portfólio Pessoal -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>🌟 Portfólio Pessoal</h3>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Responsivo</span>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Este próprio portfólio! Site responsivo desenvolvido para apresentar minha trajetória, 
+                            competências e projetos. Implementa design moderno, interatividade com JavaScript e 
+                            otimização para todos os dispositivos.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="project-link demo-link">
+                                <i class="fas fa-external-link-alt"></i> Você está aqui!
+                            </a>
+                            <a href="https://github.com/MylenaTrindade/Portfolio" target="_blank" class="project-link github-link">
+                                <i class="fab fa-github"></i> Código
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Seção de Todos os Projetos -->
+                <div class="all-projects">
+                    <h3>📂 Todos os Projetos</h3>
+                    <p>Para ver todos os meus projetos e acompanhar meu desenvolvimento, visite meu perfil no GitHub.</p>
+                </div>
+
+                <!-- Links das Redes Sociais -->
+                <div class="social-links">
+                    <h3>🔗 Conecte-se comigo:</h3>
+                    <div class="social-buttons">
+                        <a href="https://github.com/MylenaTrindade" target="_blank" class="social-btn github-btn">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/mylena-mendon%C3%A7a-227675345/" target="_blank" class="social-btn linkedin-btn">
+                            <i class="fab fa-linkedin"></i>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </section>
     <footer>
-        <p>&copy; 2024 brasília.</p>
+        <p>&copy; 2024 Mylena Mendonça - Brasília</p>
     </footer>
+
+    <script>
+        function toggleDetails(id) {
+            const details = document.getElementById(id);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
 
 </body>
 </html>
-<header>
-     <img src="images/logo.jpeg" alt="Logo" class="logo">
-    <h1>Mylena Mendonça</h1>
-    <div class="header-buttons">
-        <div class ="position">
-            <a href="#sobre">Sobre mim</a>
-            <a href="#objetivos">Objetivos</a>
-            <a href="#competencias">Competencias</a>
-            <a href="#projetos">Projetos</a>
-
-        </div>
-
-    </div>
 
