@@ -1,4 +1,4 @@
-# 🌟 Portfólio - Mylena Mendonça
+# 🌟 Portifólio - Mylena Mendonça
 
 Bem-vindo ao meu portfólio pessoal! Este é um site desenvolvido para apresentar minha trajetória acadêmica, projetos e competências como estudante de Engenharia de Software na Universidade de Brasília (UnB).
 
